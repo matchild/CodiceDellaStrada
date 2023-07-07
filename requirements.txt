@@ -1,0 +1,7 @@
+langchain==0.0.225
+numpy==1.23.5
+openai==0.27.8
+duckdb
+unstructured
+chromadb
+tiktoken
