@@ -1,8 +1,5 @@
-from utils import list_files, check_pre_existing_db
 import os
 import openai
-from langchain.document_loaders import DirectoryLoader
-from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
