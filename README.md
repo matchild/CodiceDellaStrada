@@ -1,11 +1,24 @@
 # CodiceDellaStrada
 An AI question-answering system trained on Italian traffic laws.
 
-Requirements:
-..............
+## Install
 
-Installation:
-.........
+```bash
+git clone https://github.com/matchild/CodiceDellaStrada.git
+pip install -r requirements.txt
+```
 
-Sample usage:
-......................
+## Sample usage
+```bash
+python3 main.py
+```
+## How does it work?
+
+
+
+## Requirements
+-tiktoken
+-unstructured
+-chromadb
+-openai
+-langchain
