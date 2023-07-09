@@ -1,5 +1,5 @@
 # CodiceDellaStrada
-An AI question-answering system trained on Italian traffic laws.
+An AI question-answering system trained on Italian traffic laws. This project aims to develop a system where the user can query the Italian traffic code using natural language and receive precise and reliable answers. 
 
 ## Install
 
@@ -32,7 +32,9 @@ python3 main.py
 **Answer**: _50 km/h_
 
 ## How does it work?
-The knowledge folder contains a database of embeddings obtained from sequentially splitting the original document. When a query is run, the algorithm first for the 4 most similar embedding vectors in the databse, and provides the relative sentences to the language model.
+The _/knowledge_ folder contains a database of embeddings obtained from recursively applying an embedding function (_Ada v2_) to all articles of the regulation[^1]. When a query is run, the algorithm embeds the question with the same function used to create the database, returns the most similar vectors, and provides the corresponding text chunks to the language model as context.
+
+[^1]:More precisely to 1000 character long chuncks of the original document.
 
 ## Disclaimer
 
